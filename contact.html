@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Student Self-Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            border-color: var(--accent-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(100, 181, 246, 0.2);
+        }
+        
+      
+     
+        
+        @media screen and (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form {
+                order: 2;
+            }
+            
+            .contact-info {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Student Self-Care</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="physical-health.html">Physical Health</a></li>
+                    <li><a href="mental-health.html">Mental Health</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="study-habits.html">Study Habits</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions, feedback, or suggestions? We'd love to hear from you!</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+               
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                                     <img src="imgs/bangka.jpg" alt="selfcare">
+
+                    <p>Supporting student wellbeing through holistic self-care practices</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Self-Care Categories</h4>
+                    <ul>
+                        <li><a href="physical-health.html">Physical Health</a></li>
+                        <li><a href="mental-health.html">Mental Health</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="sleep.html">Sleep</a></li>
+                        <li><a href="exercise.html">Exercise</a></li>
+                        <li><a href="social-wellness.html">Social Wellness</a></li>
+                        <li><a href="Meditation.html">Meditation.html</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="study-habits.html">Study Habits</a></li>
+                        <li><a href="time-management.html">Time Management</a></li>
+                        <li><a href="stress-management.html">Stress Management</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="meditation.html">Meditation</a></li>
+                                             <li><a href="testimonial.html">testimonial.html</a></li>
+
+                        <li><a href="healthy-meals.html">healthy-meals</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Student Self-Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
