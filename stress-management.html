@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Management - Student Self-Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .stress-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .stress-content {
+            padding: 25px;
+        }
+        
+        .stress-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .stress-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .techniques-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .technique-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 25px;
+            border-top: 4px solid var(--accent-color);
+        }
+        
+        .technique-card h4 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .technique-card p {
+            margin-bottom: 15px;
+        }
+        
+        .technique-card .steps {
+            margin-left: 20px;
+        }
+        
+        .technique-card .steps li {
+            margin-bottom: 8px;
+        }
+        
+        .stress-signs {
+            background: var(--background-color);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .signs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .sign-category {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .sign-category h4 {
+            margin-top: 0;
+            font-size: 18px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .sign-category ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+        
+        .sign-category ul li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .emergency-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+        
+        .emergency-box h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        
+        .quick-relief {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        .relief-techniques {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .relief-technique {
+            background: var(--background-color);
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Student Self-Care</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="physical-health.html">Physical Health</a></li>
+                    <li><a href="mental-health.html">Mental Health</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="study-habits.html">Study Habits</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+            </nav>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="intro-text">
+                <h2>Student Stress Management</h2>
+            </div>
+
+            <div class="stress-card">
+                <img src="imgs/hekpss.jpg" alt="Student practicing stress management" loading="lazy">
+                <div class="stress-content">
+                    <h3>Understanding Student Stress</h3>
+                    <ul>
+
+                     Student Stress means knowing what causes your stress as a student like exams, deadlines, pressure, or even group projects na ikaw lang ang gumagawa as usual .
+                        By recognizing these stressors, mas madali mo silang ma-handle.
+                        Di mo kailangan maging perfect, just aware and ready kasi mas nakakaganda 'pag calm and in control ka. 
+
+
+            </div>
+            </div>
+
+            <div class="stress-signs">
+                <h3>Recognizing Stress Signals</h3>
+                <p>Awareness is the first step in managing stress. Learn to recognize how stress manifests for you:</p>
+                
+                <div class="signs-grid">
+                    <div class="sign-category">
+                        <h4>Physical Signs</h4>
+                        <ul>
+                            <li>Headaches or muscle tension</li>
+                            <li>Sleep disturbances</li>
+                            <li>Fatigue or low energy</li>
+                            <li>Digestive problems</li>
+                            <li>Frequent colds or infections</li>
+                            <li>Changes in appetite</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sign-category">
+                        <h4>Emotional Signs</h4>
+                        <ul>
+                            <li>Feeling overwhelmed or anxious</li>
+                            <li>Irritability or short temper</li>
+                            <li>Feeling down or hopeless</li>
+                            <li>Lack of motivation</li>
+                            <li>Mood swings</li>
+                            <li>Difficulty relaxing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sign-category">
+                        <h4>Cognitive Signs</h4>
+                        <ul>
+                            <li>Trouble concentrating</li>
+                            <li>Racing thoughts</li>
+                            <li>Forgetfulness</li>
+                            <li>Negative thinking patterns</li>
+                            <li>Poor judgment</li>
+                            <li>Constant worrying</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sign-category">
+                        <h4>Behavioral Signs</h4>
+                        <ul>
+                            <li>Procrastination</li>
+                            <li>Withdrawal from friends/activities</li>
+                            <li>Increased use of caffeine, alcohol, or other substances</li>
+                            <li>Nervous habits (nail biting, pacing)</li>
+                            <li>Neglecting responsibilities</li>
+                            <li>Change in normal routines</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+       
+                </div>
+            </div>
+
+
+            <div class="next-steps" style="text-align: center; margin-top: 50px;">
+                <h3>Explore Related Self-Care Topics</h3>
+                <div class="cta-buttons">
+                    <a href="mindfulness.html" class="btn">Mindfulness Practices</a>
+                    <a href="exercise.html" class="btn">Exercise Routines</a>
+                    <a href="time-management.html" class="btn">Time Management</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="imgs/bangka.jpg" alt="selfcare">
+                    <p>Takecare of your self because i will care's of you, ano G?</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Self-Care Categories</h4>
+                    <ul>
+                        <li><a href="physical-health.html">Physical Health</a></li>
+                        <li><a href="mental-health.html">Mental Health</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="sleep.html">Sleep</a></li>
+                        <li><a href="exercise.html">Exercise</a></li>
+                        <li><a href="social-wellness.html">Social Wellness</a></li>
+                        <li><a href="Meditation.html">Meditation.html</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="study-habits.html">Study Habits</a></li>
+                        <li><a href="time-management.html">Time Management</a></li>
+                        <li><a href="stress-management.html">Stress Management</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="meditation.html">Meditation</a></li>
+                                        <li><a href="testimonial.html">testimonial.html</a></li>
+
+                        <li><a href="healthy-meals.html">healthy-meals</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Student Self-Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

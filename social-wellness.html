@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Wellness - Student Self-Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .social-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .social-content {
+            padding: 25px;
+        }
+        
+        .social-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .social-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .strategies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .strategy-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 25px;
+            border-top: 4px solid var(--accent-color);
+        }
+        
+        .strategy-card h4 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .balance-section {
+            background: var(--background-color);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .balance-tips {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .balance-tip {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .balance-tip h4 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        
+        .balance-tip p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        
+        .challenges-section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .challenge-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .challenge-item {
+            background: var(--background-color);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .challenge-item h4 {
+            margin-top: 0;
+            font-size: 18px;
+            color: var(--primary-color);
+        }
+        
+        .challenge-item p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .resource-item {
+            background: var(--background-color);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .resource-item h4 {
+            margin-top: 0;
+            font-size: 18px;
+            color: var(--primary-color);
+        }
+        
+        .resource-item p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Student Self-Care</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="physical-health.html">Physical Health</a></li>
+                    <li><a href="mental-health.html">Mental Health</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="study-habits.html">Study Habits</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+        <div class="container">
+            <div class="intro-text">
+            </div>
+
+
+            <h3 class="section-title">Building Meaningful Social Connections</h3>
+            
+            <div class="strategies-grid">
+                <div class="strategy-card">
+                    <h4>Join Campus Organizations</h4>
+                    <p>Campus clubs and organizations offer structured ways to meet people with similar interests:</p>
+                    <ul>
+                        <li>Attend club fairs at the beginning of semesters</li>
+                        <li>Look for groups aligned with your academic interests, hobbies, or values</li>
+                        <li>Consider service-oriented organizations that combine socializing with purpose</li>
+                        <li>Don't overcommit; choose 1-2 groups and participate meaningfully</li>
+                    </ul>
+                    <p>These structured environments make initial connections easier, especially for those who find spontaneous socializing challenging.</p>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Form Study Groups</h4>
+                    <p>Combine academic and social needs through collaborative learning:</p>
+                    <ul>
+                        <li>Invite classmates to form regular study sessions</li>
+                        <li>Use campus study spaces or libraries for meetups</li>
+                        <li>Establish clear objectives to maintain productivity</li>
+                        <li>Include brief social breaks to build rapport</li>
+                    </ul>
+                    <p>Study groups can improve both learning outcomes and social connections, creating a positive feedback loop.</p>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Leverage Common Spaces</h4>
+                    <p>Utilize shared environments for organic social interactions:</p>
+                    <ul>
+                        <li>Spend time in residence hall common areas</li>
+                        <li>Use campus coffee shops as both study and social spaces</li>
+                        <li>Participate in residence hall or department events</li>
+                        <li>Leave your door open when in your room (if safe and comfortable)</li>
+                    </ul>
+                    <p>Simply being present in social spaces increases opportunities for spontaneous connections.</p>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Take Initiative</h4>
+                    <p>Don't wait for others to make the first move:</p>
+                    <ul>
+                        <li>Invite classmates for coffee after class</li>
+                        <li>Organize small gatherings or study sessions</li>
+                        <li>Share information about campus events you're attending</li>
+                        <li>Follow up with people you meet to build continuity</li>
+                    </ul>
+                    <p>Many students hesitate to reach out first, but most appreciate when someone else takes the initiative.</p>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Engage in Campus Life</h4>
+                    <p>Take advantage of university-sponsored activities:</p>
+                    <ul>
+                        <li>Attend campus events, lectures, and performances</li>
+                        <li>Participate in orientation and welcome week activities</li>
+                        <li>Join intramural sports or fitness classes</li>
+                        <li>Volunteer for campus initiatives</li>
+                    </ul>
+                    <p>These structured activities provide natural conversation starters and shared experiences.</p>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Quality Over Quantity</h4>
+                    <p>Focus on developing deeper connections:</p>
+                    <ul>
+                        <li>Invest time in relationships that feel supportive and positive</li>
+                        <li>Practice active listening and genuine engagement</li>
+                        <li>Share appropriately about yourself to build mutual trust</li>
+                        <li>Recognize that a few close friends can provide more support than many acquaintances</li>
+                    </ul>
+                    <p>Research shows that the quality of social connections has a greater impact on wellbeing than the quantity.</p>
+                </div>
+            </div>
+
+            <div class="balance-section">
+                <h3>Balancing Social Life and Academics</h3>
+                <p>One of the biggest challenges for students is finding the right balance between social engagement and academic responsibilities:</p>
+                
+                <div class="balance-tips">
+                    <div class="balance-tip">
+                        <h4>Intentional Scheduling</h4>
+                        <p>Block time for both social activities and studying in your calendar. Protect your study time while also making social connections a priority rather than an afterthought.</p>
+                    </div>
+                    
+                    <div class="balance-tip">
+                        <h4>Combine When Possible</h4>
+                        <p>Look for opportunities that serve both needs: study groups, academic clubs, or attending lectures with friends blend social and academic goals.</p>
+                    </div>
+                    
+                    <div class="balance-tip">
+                        <h4>Set Clear Boundaries</h4>
+                        <p>Learn to say no when necessary and communicate your academic commitments to friends. True friends will respect your priorities.</p>
+                    </div>
+                    
+                    <div class="balance-tip">
+                        <h4>Quality Social Time</h4>
+                        <p>Rather than frequent but distracted hangouts, plan fewer but more meaningful social interactions where you're fully present.</p>
+                    </div>
+                    
+                    <div class="balance-tip">
+                        <h4>Use Academic Breaks</h4>
+                        <p>Plan social activities during natural breaks in the academic calendar rather than during high-pressure periods.</p>
+                    </div>
+                    
+                    <div class="balance-tip">
+                        <h4>Recognize the Value</h4>
+                        <p>Remember that social time isn't just "fun"—it's an investment in your mental health that can improve academic performance in the long run.</p>
+                  
+
+            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                        <img src="imgs/bangka.jpg" alt="selfcare">
+
+                    <p>Supporting student wellbeing through holistic self-care practices</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Self-Care Categories</h4>
+                    <ul>
+                        <li><a href="physical-health.html">Physical Health</a></li>
+                        <li><a href="mental-health.html">Mental Health</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="sleep.html">Sleep</a></li>
+                        <li><a href="exercise.html">Exercise</a></li>
+                        <li><a href="social-wellness.html">Social Wellness</a></li>
+                        <li><a href="Meditation.html">Meditation.html</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="study-habits.html">Study Habits</a></li>
+                        <li><a href="time-management.html">Time Management</a></li>
+                        <li><a href="stress-management.html">Stress Management</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="meditation.html">Meditation</a></li>
+                                             <li><a href="testimonial.html">testimonial.html</a></li>
+
+                        <li><a href="healthy-meals.html">healthy-meals</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Student Self-Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

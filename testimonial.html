@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Testimonials - Student Self-Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Read real stories from students who have improved their well-being and academic success through effective self-care practices.">
+    <style>
+        .testimonials-intro {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            padding: 25px;
+        }
+        
+        .testimonials-intro h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .testimonial-content {
+            padding: 25px;
+            flex: 1;
+            position: relative;
+        }
+        
+        .testimonial-content:before {
+            content: "\201C"; 
+            font-size: 100px;
+            color: var(--border-color);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1;
+        }
+        
+        .testimonial-quote {
+            position: relative;
+            z-index: 1;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            margin-top: auto;
+        }
+        
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--accent-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .author-info h4 {
+            margin: 0 0 5px;
+            color: var(--primary-color);
+        }
+        
+        .author-info p {
+            margin: 0;
+            color: var(--secondary-color);
+            font-size: 14px;
+        }
+        
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0 40px;
+        }
+        
+        .category-filter {
+            background: white;
+            border: 1px solid var(--border-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .category-filter:hover, .category-filter.active {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+        
+        .video-testimonials {
+            background: var(--background-color);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+        
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+        
+        .video-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .video-thumbnail {
+            width: 100%;
+            height: 180px;
+            background: var(--light-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .play-button {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0.9;
+        }
+        
+        .video-info {
+            padding: 15px;
+        }
+        
+        .video-info h4 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 18px;
+            color: var(--primary-color);
+        }
+        
+        .video-info p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--secondary-color);
+        }
+        
+        .share-story {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        .share-story h3 {
+            margin-top: 0;
+        }
+        
+        .share-story p {
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+        
+        .next-steps {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .next-steps h3 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        @media screen and (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Student Self-Care</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="physical-health.html">Physical Health</a></li>
+                    <li><a href="mental-health.html">Mental Health</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="study-habits.html">Study Habits</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="page-header">
+        <div class="container">
+            <h2>Student Testimonials</h2>
+            <p>Real stories from students who have transformed their college experience through self-care</p>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="container">
+            <div class="testimonials-intro">
+                <h3>The Impact of Self-Care</h3>
+                <p>Reading about others' experiences can be both inspiring and informative. These testimonials offer a glimpse into how fellow students have incorporated self-care practices into their academic lives and the positive changes they've experienced as a result.</p>
+                <p>While everyone's journey is unique, these stories highlight common challenges students face and practical strategies that have helped them maintain wellbeing while pursuing their academic goals.</p>
+            </div>
+            <div class="categories">
+                <div class="category-filter active">All Stories</div>
+                <div class="category-filter">Physical Health</div>
+                <div class="category-filter">Mental Health</div>
+                <div class="category-filter">Academic Balance</div>
+                <div class="category-filter">Stress Management</div>
+                <div class="category-filter">Sleep Improvement</div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-quote">Implementing a consistent sleep schedule completely transformed my academic experience. As a pre-med student, I used to wear sleep deprivation like a badge of honor, but I was actually sabotaging myself. Now I protect my 7 hours of sleep as non-negotiable, and my test scores have actually improved while I feel more present and engaged in my classes.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <h4>Morgan</h4>
+                                <p>Junior, Biology Major</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-quote">After failing two midterms during my first semester, I realized my high school study habits weren't working. The time management and study strategies I learned through this site helped me restructure my approach completely. Instead of pulling all-nighters, I now study in focused blocks with actual breaks for meals and exercise. My GPA went from a 2.3 to a 3.7 in one semester!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">J</div>
+                            <div class="author-info">
+                                <h4>James</h4>
+                                <p>Sophomore, Computer Science</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-quote">I was experiencing intense anxiety during my first year, but I thought that was just part of the college experience. Learning mindfulness techniques and getting support through my university's counseling center changed everything. I still experience stress, but now I have tools to manage it before it becomes overwhelming. Don't wait until you're at a breaking point to prioritize your mental health.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">L</div>
+                            <div class="author-info">
+                                <h4>Leila</h4>
+                                <p>Senior, Psychology</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-quote">As a student athlete, I was constantly exhausted trying to balance training, classes, and social life. Learning proper nutrition and meal prep strategies helped me fuel my body appropriately and maintain energy throughout my demanding schedule. Simple changes like prepping protein-rich snacks and staying properly hydrated made a huge difference in my recovery and mental focus.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">D</div>
+                            <div class="author-info">
+                                <h4>Darnell</h4>
+                                <p>Junior, Sports Management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-quote">As an international student, I felt incredibly isolated and homesick my first semester. Following the social wellness strategies helped me step outside my comfort zone and build connections on campus. Joining study groups and a cultural student organization gave me a sense of belonging that made all the difference in my college experience.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-info">
+                                <h4>Sofia</h4>
+                                <p>Sophomore, International Relations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-quote">I used to think exercise was just something I didn't have time for as a double major. Finding small ways to incorporate movement into my day—walking between classes, doing quick dorm workouts, and attending one yoga class weekly—improved my focus, sleep quality, and overall mood. It actually creates more time than it takes by making me more efficient.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">T</div>
+                            <div class="author-info">
+                                <h4>Tyler</h4>
+                                <p>Senior, Economics & Mathematics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-testimonials">
+                <h3>Video Stories</h3>
+                <p>Watch students share their personal self-care journeys and the strategies that worked for them.</p>
+                
+                <div class="video-grid">
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1455849318743-b2233052fcff" alt="Student Emma discussing mental health strategies during finals week" loading="lazy">
+                            <div class="play-button" role="button" aria-label="Play video: Finding Balance During Finals">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Finding Balance During Finals</h4>
+                            <p>Emma shares her journey of discovering effective stress management techniques</p>
+                        </div>
+                    </div>
+                    
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0" alt="Student Michael explaining his improved study methods and academic success" loading="lazy">
+                            <div class="play-button" role="button" aria-label="Play video: My Study Revolution">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4>My Study Revolution</h4>
+                            <p>Michael explains how evidence-based study techniques transformed his academic performance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1516534775068-ba3e7458af70" alt="Student Aisha demonstrating how to prepare nutritious meals in a dorm room" loading="lazy">
+                            <div class="play-button" role="button" aria-label="Play video: Dorm Room Nutrition Hacks">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Dorm Room Nutrition Hacks</h4>
+                            <p>Aisha demonstrates her favorite quick, healthy meals on a student budget</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="share-story">
+                <h3>Share Your Self-Care Journey</h3>
+                <p>Has incorporating self-care practices made a positive difference in your student experience? Your story could inspire and help fellow students who are facing similar challenges.</p>
+                <a href="contact.html" class="btn">Submit Your Story</a>
+            </div>
+            <div class="next-steps">
+                <h3>Explore Self-Care Strategies</h3>
+                <div class="cta-buttons">
+                    <a href="physical-health.html" class="btn">Physical Health</a>
+                    <a href="mental-health.html" class="btn">Mental Health</a>
+                    <a href="study-habits.html" class="btn">Study Habits</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                                   <img src="imgs/bangka.jpg" alt="selfcare">
+
+                    <p>Supporting student wellbeing through holistic self-care practices</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Self-Care Categories</h4>
+                    <ul>
+                        <li><a href="physical-health.html">Physical Health</a></li>
+                        <li><a href="mental-health.html">Mental Health</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="sleep.html">Sleep</a></li>
+                        <li><a href="exercise.html">Exercise</a></li>
+                        <li><a href="social-wellness.html">Social Wellness</a></li>
+                        <li><a href="Meditation.html">Meditation.html</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="study-habits.html">Study Habits</a></li>
+                        <li><a href="time-management.html">Time Management</a></li>
+                        <li><a href="stress-management.html">Stress Management</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="testimonial.html">testimonial.html</a></li>
+                                             <li><a href="testimonial.html">testimonial.html</a></li>
+
+                        <li><a href="healthy-meals.html">healthy-meals</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Student Self-Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryFilters = document.querySelectorAll('.category-filter');
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            
+            categoryFilters.forEach(filter => {
+                filter.addEventListener('click', function() {
+                    categoryFilters.forEach(f => f.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    console.log('Selected category:', this.textContent.trim());
+                });
+            });
+            
+            const playButtons = document.querySelectorAll('.play-button');
+            
+            playButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const videoTitle = this.getAttribute('aria-label').replace('Play video: ', '');
+                    console.log('Playing video:', videoTitle);
+                    
+                    this.style.transform = 'scale(0.9)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 200);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

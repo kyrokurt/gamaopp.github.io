@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise for Students - Student Self-Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .exercise-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .exercise-content {
+            padding: 25px;
+        }
+        
+        .exercise-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .exercise-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .routines-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .routine-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .routine-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .routine-content {
+            padding: 20px;
+            flex: 1;
+        }
+        
+        .routine-card h4 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        
+        .exercise-list {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .exercise-list li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .benefits-section {
+            background: var(--background-color);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .benefit-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .benefit-item h4 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        
+        .benefit-item p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        
+        .motivation-section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .motivation-tips {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .motivation-tip {
+            padding: 20px;
+            border-radius: 8px;
+            background: var(--background-color);
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Student Self-Care</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="physical-health.html">Physical Health</a></li>
+                    <li><a href="mental-health.html">Mental Health</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="study-habits.html">Study Habits</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+   </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="intro-text">
+            <h2>Exercise for Students</h2>
+
+                <p>Regular physical activity is one of the most powerful tools for enhancing both your academic performance and overall wellbeing as a student. Exercise improves cognitive function, reduces stress, boosts mood, and increases energy—all crucial factors for academic success. This guide offers practical workout routines and strategies designed specifically for busy student schedules, limited spaces, and tight budgets.</p>
+            </div>
+
+
+           
+
+
+            <div class="motivation-section">
+                <h3>Staying Motivated: Making Exercise a Habit</h3>
+                <p>One of the biggest challenges for students is maintaining consistency with exercise. Try these evidence-based strategies:</p>
+                
+                <div class="motivation-tips">
+                    <div class="motivation-tip">
+                        <h4>Schedule It</h4>
+                        <p>Block exercise time in your calendar just like a class. Even 20-minute blocks can be effective if consistent.</p>
+                    </div>
+                    
+                    <div class="motivation-tip">
+                        <h4>Start Small</h4>
+                        <p>Begin with just 10 minutes daily. Small, achievable goals build momentum and prevent overwhelm.</p>
+                    </div>
+                    
+                    <div class="motivation-tip">
+                        <h4>Piggyback Habits</h4>
+                        <p>Attach exercise to existing habits: "After my morning coffee, I'll do 10 minutes of yoga" makes the habit more likely to stick.</p>
+                    </div>
+                    
+                    <div class="motivation-tip">
+                        <h4>Find Your "Why"</h4>
+                        <p>Connect exercise to immediate benefits you value: better focus, stress relief, improved sleep, increased energy—not just long-term health.</p>
+                    </div>
+                    
+                    <div class="motivation-tip">
+                        <h4>Make It Social</h4>
+                        <p>Exercise with friends or join campus fitness groups. Social commitments increase adherence dramatically.</p>
+                    </div>
+                    
+                    <div class="motivation-tip">
+                        <h4>Remove Barriers</h4>
+                        <p>Keep workout clothes visible, prepare gym bags the night before, or sleep in workout clothes for morning routines.</p>
+                    </div>
+                </div>
+            </div>
+
+          
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                                   <img src="imgs/bangka.jpg" alt="selfcare">
+
+                    <p>Supporting student wellbeing through holistic self-care practices</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Self-Care Categories</h4>
+                    <ul>
+                        <li><a href="physical-health.html">Physical Health</a></li>
+                        <li><a href="mental-health.html">Mental Health</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="sleep.html">Sleep</a></li>
+                        <li><a href="exercise.html">Exercise</a></li>
+                        <li><a href="social-wellness.html">Social Wellness</a></li>
+                        <li><a href="Meditation.html">Meditation.html</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="study-habits.html">Study Habits</a></li>
+                        <li><a href="time-management.html">Time Management</a></li>
+                        <li><a href="stress-management.html">Stress Management</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="meditation.html">Meditation</a></li>
+                                        <li><a href="testimonial.html">testimonial.html</a></li>
+
+                        <li><a href="healthy-meals.html">healthy-meals</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Student Self-Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

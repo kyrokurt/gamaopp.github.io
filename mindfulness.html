@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindfulness for Students - Student Self-Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .mindfulness-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .mindfulness-content {
+            padding: 25px;
+        }
+        
+        .mindfulness-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .mindfulness-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .practices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .practice-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 25px;
+            border-top: 4px solid var(--accent-color);
+        }
+        
+        .practice-card h4 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .practice-card .steps {
+            margin-left: 20px;
+        }
+        
+        .practice-card .steps li {
+            margin-bottom: 8px;
+        }
+        
+        .benefits-section {
+            background: var(--background-color);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .benefit-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .benefit-item h4 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        
+        .benefit-item p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        
+        .integration-section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .integration-ideas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .integration-idea {
+            background: var(--background-color);
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        
+        .resources-list {
+            margin-top: 20px;
+        }
+        
+        .resource-item {
+            background: var(--background-color);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .resource-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .resource-details {
+            flex: 1;
+        }
+        
+        .resource-details h4 {
+            margin: 0 0 5px;
+            font-size: 16px;
+        }
+        
+        .resource-details p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Student Self-Care</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="physical-health.html">Physical Health</a></li>
+                    <li><a href="mental-health.html">Mental Health</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="study-habits.html">Study Habits</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="intro-text">
+            </div>
+
+            <div class="mindfulness-card">
+                <img src="https://images.unsplash.com/photo-1701208081532-d46c6916a41f" alt="Student practicing mindfulness outdoors" loading="lazy">
+                <div class="mindfulness-content">
+                    <h3>What Is Mindfulness?</h3>
+                    <p>Mindfulness is the ability to be fully present and engaged in the moment, aware of your thoughts and feelings without being overly reactive or overwhelmed by them. For students, mindfulness can mean:</p>
+                    <ul>
+                        <li>Studying with focused attention rather than divided concentration</li>
+                        <li>Being aware of stress responses before they escalate</li>
+                        <li>Noticing thought patterns that contribute to test anxiety</li>
+                        <li>Approaching academic challenges with curiosity rather than judgment</li>
+                        <li>Creating mental space between stimulus and reaction</li>
+                    </ul>
+                    <p>Research has shown that regular mindfulness practice can improve working memory, reading comprehension, and task focus—skills central to academic success. Additionally, mindfulness reduces stress and anxiety, which often interfere with learning and performance.</p>
+                </div>
+            </div>
+
+            
+
+            <div class="mindfulness-card">
+                <div class="mindfulness-content">
+                    <h3>Mindfulness Resources for Students</h3>
+                    <p>Explore these resources to support your mindfulness practice:</p>
+                    
+                    <div class="resources-list">
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                            </div>
+                            <div class="resource-details">
+                                <h4>Free Mobile Apps</h4>
+                                <p>Insight Timer, Healthy Minds Program, UCLA Mindful, Smiling Mind</p>
+                            </div>
+                        </div>
+                        
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            </div>
+                            <div class="resource-details">
+                                <h4>Online Resources</h4>
+                                <p>Greater Good in Action, Mindful.org, Center for Mindfulness</p>
+                            </div>
+                        </div>
+                        
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                            </div>
+                            <div class="resource-details">
+                                <h4>Books for Students</h4>
+                                <p>"Mindfulness for Students" by Natasha Kaufman, "The Mindful Student" by Koru Mindfulness</p>
+                            </div>
+                        </div>
+                        
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </div>
+                            <div class="resource-details">
+                                <h4>Campus Resources</h4>
+                                <p>Many universities offer mindfulness programs, workshops, and spaces through wellness centers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-steps" style="text-align: center; margin-top: 50px;">
+                <h3>Explore Related Self-Care Topics</h3>
+                <div class="cta-buttons">
+                    <a href="meditation.html" class="btn">Meditation Techniques</a>
+                    <a href="stress-management.html" class="btn">Stress Management</a>
+                    <a href="study-habits.html" class="btn">Effective Study Habits</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                              <img src="imgs/bangka.jpg" alt="selfcare">
+
+                    <p>Supporting student wellbeing through holistic self-care practices</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Self-Care Categories</h4>
+                    <ul>
+                        <li><a href="physical-health.html">Physical Health</a></li>
+                        <li><a href="mental-health.html">Mental Health</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="sleep.html">Sleep</a></li>
+                        <li><a href="exercise.html">Exercise</a></li>
+                        <li><a href="social-wellness.html">Social Wellness</a></li>
+                        <li><a href="Meditation.html">Meditation.html</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="study-habits.html">Study Habits</a></li>
+                        <li><a href="time-management.html">Time Management</a></li>
+                        <li><a href="stress-management.html">Stress Management</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="meditation.html">Meditation</a></li>
+                                     <li><a href="testimonial.html">testimonial.html</a></li>
+
+                        <li><a href="healthy-meals.html">healthy-meals</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Student Self-Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

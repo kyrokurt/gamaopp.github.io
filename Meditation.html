@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Student Self-Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .resources-intro {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            padding: 25px;
+        }
+        
+        .resources-intro h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .resource-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .category-content {
+            padding: 20px;
+            flex: 1;
+        }
+        
+        .category-card h4 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 20px;
+        }
+        
+        .category-card p {
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+        
+        .resource-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .resource-item {
+            border-top: 1px solid var(--border-color);
+            padding: 15px 0;
+        }
+        
+        .resource-item:first-child {
+            border-top: none;
+            padding-top: 0;
+        }
+        
+        .resource-item h5 {
+            margin: 0 0 5px;
+            color: var(--primary-color);
+            font-size: 16px;
+        }
+        
+        .resource-item p {
+            margin: 0 0 5px;
+            font-size: 14px;
+        }
+        
+        .resource-type {
+            display: inline-block;
+            background: var(--background-color);
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+        
+        .crisis-resources {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+        
+        .crisis-resources h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        
+        .crisis-resources ul {
+            margin-left: 20px;
+        }
+        
+        .crisis-resources ul li {
+            margin-bottom: 10px;
+        }
+        
+        .campus-resources {
+            background: var(--background-color);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .campus-list {
+            margin-top: 20px;
+        }
+        
+        .campus-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .campus-item h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .campus-item p {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Student Self-Care</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="physical-health.html">Physical Health</a></li>
+                    <li><a href="mental-health.html">Mental Health</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="study-habits.html">Study Habits</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+        <div class="container">
+            <h3 class="section-title">Meditation tips</h3>
+              
+
+            <div class="resource-categories">
+                <div class="category-card">
+                    <img src="imgs/meditation.jpg" alt="Mental health resources" loading="lazy">
+                    <div class="category-content">
+                        <h4>Start Small</h4>
+                        <p>Begin with 2–5 minutes per session. It’s better to be consistent with short sessions than to burn out trying to meditate too long.</p>
+                        <ul class="resource-list">
+                            <li class="resource-item">
+                                <h5>Calm</h5>
+                                <p>Meditation and sleep app with specific programs for student stress and anxiety.</p>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="imgs/meditation.jpg" alt="Physical wellness resources" loading="lazy">
+                    <div class="category-content">
+                        <h4>Pick a Regular Time</h4>
+                        <p>Resources to support exercise, nutrition, and overall physical health.</p>
+                        <ul class="resource-list">
+                            <li class="resource-item">
+                                <h5>FitOn</h5>
+                                <p>Free workout app with exercises that can be done in small spaces like dorm rooms.</p>
+                               
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="imgs/meditation.jpg"alt="Academic success resources" loading="lazy">
+                    <div class="category-content">
+                        <h4>Create a Quiet Space</h4>
+                        <p>Tools to enhance studying, time management, and learning effectiveness.</p>
+                        <ul class="resource-list">
+                            <li class="resource-item">
+                                <h5>Forest</h5>
+                                <p>Focus timer app that helps you stay off your phone during study sessions.</p>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="imgs/meditation.jpg" alt="Mindfulness resources" loading="lazy">
+                    <div class="category-content">
+                        <h4>Focus on the Breath
+</h4>
+                        <p>Pay attention to the sensation of your breath coming in and going out. If your mind wanders (which it will), gently bring it back to the breath.</p>
+                       
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1741676516769-6f33bec11efd" alt="Financial wellness resources" loading="lazy">
+                    <div class="category-content">
+                        <h4> Use a Timer</h4>
+                        <p>Set a timer so you’re not constantly checking the clock. You can use apps like Insight Timer, Calm, or Headspace.</p>
+                        <ul class="resource-list">
+                            <li class="resource-item">
+                                <h5>Mint</h5>
+                                <p>Free budgeting app to track expenses and manage student finances.</p>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a" alt="Social wellbeing resources" loading="lazy">
+                    <div class="category-content">
+                        <h4>Try Guided Meditation</h4>
+                        <p>If sitting in silence is difficult at first, guided meditations can help you stay focused. There are many free ones online..</p>
+                        <ul class="resource-list">
+                            <li class="resource-item">
+                                <h5>Meetup</h5>
+                                <p>Platform to find local groups based on interests and hobbies.</p>
+                                
+                    </div>
+                </div>
+            </div>
+
+                </div>
+            </div>
+
+           
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                             <img src="imgs/bangka.jpg" alt="selfcare">
+
+                    <p>Supporting student wellbeing through holistic self-care practices</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Self-Care Categories</h4>
+                    <ul>
+                        <li><a href="physical-health.html">Physical Health</a></li>
+                        <li><a href="mental-health.html">Mental Health</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="sleep.html">Sleep</a></li>
+                        <li><a href="exercise.html">Exercise</a></li>
+                        <li><a href="social-wellness.html">Social Wellness</a></li>
+                        <li><a href="Meditation.html">Meditation.html</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="study-habits.html">Study Habits</a></li>
+                        <li><a href="time-management.html">Time Management</a></li>
+                        <li><a href="stress-management.html">Stress Management</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="meditation.html">Meditation</a></li>
+                                              <li><a href="testimonial.html">testimonial.html</a></li>
+
+                        <li><a href="healthy-meals.html">healthy-meals</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Student Self-Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
